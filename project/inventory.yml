@@ -1,0 +1,3 @@
+all:
+  vars:
+    hooks_root_path: "../hooks"

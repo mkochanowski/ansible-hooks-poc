@@ -1,0 +1,2 @@
+- set_fact:
+    custom_fact_set_in_hook: "This value was set in a hook"

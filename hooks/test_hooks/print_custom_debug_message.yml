@@ -1,0 +1,2 @@
+- debug:
+    msg: "This is a debug message called from the injected hook."

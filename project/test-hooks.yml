@@ -1,0 +1,7 @@
+---
+- name: Test hooks
+  hosts: localhost
+  gather_facts: false
+
+  roles:
+    - test_hooks

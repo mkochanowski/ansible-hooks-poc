@@ -1,0 +1,2 @@
+hooks_role_path: "{{ hooks_root_path }}/{{ hook_source }}"
+hooks_role_tasks_file: "{{ hooks_role_path }}/{{ hook_name | default('main') }}.yml"
