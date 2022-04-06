@@ -1,0 +1,7 @@
+- debug:
+    msg: "Test: Ensure missing hook does not terminate playbook execution"
+
+- include_role:
+    name: inject_hook
+  vars:
+    hook_path: test_hooks/this_hook_should_not_exist

@@ -1,0 +1,7 @@
+- debug:
+    msg: "Test: Inject simple debug statement"
+
+- include_role:
+    name: inject_hook
+  vars:
+    hook_path: test_hooks/print_debug_message

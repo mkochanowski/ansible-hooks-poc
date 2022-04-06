@@ -1,33 +1,6 @@
-# Inject custom debug messages
-
-- debug:
-    msg: "Task 1"
-
-- debug:
-    msg: "Task 2"
-
-- include_role:
-    name: inject_hook
-  vars:
-    hook_source: test_hooks
-    hook_name: print_custom_debug_message
-
-- debug:
-    msg: "Task 3"
-
-- debug:
-    msg: "Task 4"
-
-# Set custom vars/facts
-
-- debug:
-    var: custom_fact_set_in_hook
-
-- include_role:
-    name: inject_hook
-  vars:
-    hook_source: test_hooks
-    hook_name: set_custom_facts
-
-- debug:
-    var: custom_fact_set_in_hook
+- name: Include tasks containing tests
+  include_tasks: "{{ item }}"
+  loop:
+    - test_hook_missing.yml
+    - test_set_custom_facts.yml
+    - test_simple_debug_injection.yml

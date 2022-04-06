@@ -1,0 +1,13 @@
+- debug:
+    msg: "Test: Set Custom Facts from within the Injected Hook"
+
+- debug:
+    var: custom_fact_set_in_hook
+
+- include_role:
+    name: inject_hook
+  vars:
+    hook_path: test_hooks/set_custom_facts
+
+- debug:
+    var: custom_fact_set_in_hook

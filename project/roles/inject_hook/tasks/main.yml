@@ -1,5 +1,5 @@
 - debug:
-    msg: "Injecting '{{ hook_name }}' for '{{ hook_source }}' if such hook exists..."
+    msg: "Injecting '{{ hook_path }}' if such hook exists..."
 
 - include_tasks: "{{ hooks_role_tasks_file }}"
   when: "hooks_role_tasks_file is file"
